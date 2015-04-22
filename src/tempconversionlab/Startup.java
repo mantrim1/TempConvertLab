@@ -12,7 +12,7 @@ import javax.swing.UIManager;
  *
  * @author Mark
  */
-public class TempConversionLab {
+public class Startup {
 
     /**
      * @param args the command line arguments

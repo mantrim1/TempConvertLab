@@ -35,15 +35,29 @@ public class TempConverter {
         String cTempS= Double.toString(this.cTemp);
         return cTempS;
     }
+    public String getfTempString(){
+        String fTempS= Double.toString(this.fTemp);
+        return fTempS;
+    }
     public void setfTempFromString(String fTempS)throws NumberFormatException{
         this.fTemp=Double.parseDouble(fTempS);
         //System.out.println(fTemp);
     }
-    public void convert(){
+    public void setcTempFromString(String cTempS)throws NumberFormatException{
+        this.cTemp=Double.parseDouble(cTempS);
+        //System.out.println(fTemp);
+    }
+    public void convertFToC(){
 //        double fiveNinths=5D/9D;
 //        System.out.println(fiveNinths);
         this.cTemp=(this.fTemp-32)*(5D/9D);
         System.out.println(cTemp);
+    }
+    public void convertCToF(){
+//        double fiveNinths=5D/9D;
+//        System.out.println(fiveNinths);
+        this.fTemp=(this.cTemp*(5D/9D))+32;
+        System.out.println(fTemp);
     }
     
 }
